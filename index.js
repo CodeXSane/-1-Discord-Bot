@@ -24,4 +24,8 @@ client.once("ready", async () => {
   client.user.setActivity(`${config.prefix}help`, { type: "LISTENING", url: "https:/github.com/CodeXSane/Discord-Bot" }) // Types are: 'LISTENING', 'WATCHING', 'PLAYING', 'STREAMING'
 });
 
+client.on("messageCreate", async message => {
+  if(message.author.bot || message.channel.type === "DM") return;
+});
+
 client.login(config.token);
