@@ -20,7 +20,7 @@ client.aliases = new DJS.Collection();
 
 client.once("ready", async () => {
   console.log(`Successfully logged on to ${client.user.tag}!`);
-  client.user.setStatus("idle);
+  client.user.setStatus("idle");
   client.user.setActivity(`${config.prefix}help`, { type: "LISTENING", url: "https:/github.com/CodeXSane/Discord-Bot" }) // Types are: 'LISTENING', 'WATCHING', 'PLAYING', 'STREAMING'
 });
 
